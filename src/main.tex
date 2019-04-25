@@ -11,8 +11,20 @@
 
 \input{header}
 
-\input{letter}
+\ifdefined\all
+    \vspace{20px}
+    \input{letter} 
+    \include{resume}
+\fi
 
-\include{resume}
+\ifdefined\letter
+    \vspace{20px}
+    \input{letter}
+\fi
+
+\ifdefined\resume
+    \vspace{20px}
+    \input{resume}
+\fi
 
 \end{document}

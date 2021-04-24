@@ -11,3 +11,4 @@ resume:
 
 clean:
 	cd src && rm -rf *.gz *.pdf *.aux *.fls *.log *.fdb_latexmk *.out __latexindent_temp.tex
+	rm dist/*

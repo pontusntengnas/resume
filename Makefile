@@ -1,4 +1,4 @@
-cleanAndMoveToDist = rm *.aux *.log && mv *.pdf ../dist
+cleanAndMoveToDist = rm *.aux *.log && mv *.pdf ../dist/
 
 all:
 	cd src && pdflatex -jobname=pontus_tengnas_letter_resume "\def\all{}\input{main.tex}" && $(cleanAndMoveToDist)
